@@ -1,0 +1,509 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-07-12T13:25:50.771Z",
+        "line": 15,
+        "name": "Verify if places can be added successfully using AddPlaceApi",
+        "description": "",
+        "id": "add/update/delete-place-modifications-in-map;verify-if-places-can-be-added-successfully-using-addplaceapi;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3231903900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Add place payload with \"AAHouse\" \"French-IN\" \"-38.383494\" \"33.427362\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"AAHouse\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"French-IN\"",
+                  "offset": 33
+                },
+                {
+                  "val": "\"-38.383494\"",
+                  "offset": 45
+                },
+                {
+                  "val": "\"33.427362\"",
+                  "offset": 58
+                }
+              ],
+              "location": "stepDefinitions.DemoPlaceModificationsStepDefinitions.add_place_payload(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2089604600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User calls \"AddPlaceAPI\" using http \"Post\" request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"AddPlaceAPI\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"Post\"",
+                  "offset": 36
+                }
+              ],
+              "location": "stepDefinitions.DemoPlaceModificationsStepDefinitions.user_calls_using_http_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 89002800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "response should be http status \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"200\"",
+                  "offset": 31
+                }
+              ],
+              "location": "stepDefinitions.DemoPlaceModificationsStepDefinitions.response_should_be_http_status(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1047996900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "\"status\" in response body is \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"status\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"OK\"",
+                  "offset": 29
+                }
+              ],
+              "location": "stepDefinitions.DemoPlaceModificationsStepDefinitions.in_response_body_is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 29001400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "\"scope\" in response body is \"APP\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"scope\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"APP\"",
+                  "offset": 28
+                }
+              ],
+              "location": "stepDefinitions.DemoPlaceModificationsStepDefinitions.in_response_body_is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 403287600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "verify place created maps to \"AAHouse\" using \"GetPlaceAPI\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"AAHouse\"",
+                  "offset": 29
+                },
+                {
+                  "val": "\"GetPlaceAPI\"",
+                  "offset": 45
+                }
+              ],
+              "location": "stepDefinitions.DemoPlaceModificationsStepDefinitions.verify_place_created_maps_to_using(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AddPlace"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-07-12T13:25:57.813Z",
+        "line": 16,
+        "name": "Verify if places can be added successfully using AddPlaceApi",
+        "description": "",
+        "id": "add/update/delete-place-modifications-in-map;verify-if-places-can-be-added-successfully-using-addplaceapi;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 13020600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Add place payload with \"BBHouse\" \"Spanish-IN\" \"-48.26683\" \"48.427362\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"BBHouse\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"Spanish-IN\"",
+                  "offset": 33
+                },
+                {
+                  "val": "\"-48.26683\"",
+                  "offset": 46
+                },
+                {
+                  "val": "\"48.427362\"",
+                  "offset": 58
+                }
+              ],
+              "location": "stepDefinitions.DemoPlaceModificationsStepDefinitions.add_place_payload(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 231973500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User calls \"AddPlaceAPI\" using http \"Post\" request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"AddPlaceAPI\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"Post\"",
+                  "offset": 36
+                }
+              ],
+              "location": "stepDefinitions.DemoPlaceModificationsStepDefinitions.user_calls_using_http_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2003800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "response should be http status \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"200\"",
+                  "offset": 31
+                }
+              ],
+              "location": "stepDefinitions.DemoPlaceModificationsStepDefinitions.response_should_be_http_status(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 24004000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "\"status\" in response body is \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"status\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"OK\"",
+                  "offset": 29
+                }
+              ],
+              "location": "stepDefinitions.DemoPlaceModificationsStepDefinitions.in_response_body_is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 58995900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "\"scope\" in response body is \"APP\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"scope\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"APP\"",
+                  "offset": 28
+                }
+              ],
+              "location": "stepDefinitions.DemoPlaceModificationsStepDefinitions.in_response_body_is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 412578000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "verify place created maps to \"BBHouse\" using \"GetPlaceAPI\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"BBHouse\"",
+                  "offset": 29
+                },
+                {
+                  "val": "\"GetPlaceAPI\"",
+                  "offset": 45
+                }
+              ],
+              "location": "stepDefinitions.DemoPlaceModificationsStepDefinitions.verify_place_created_maps_to_using(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AddPlace"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-07-12T13:25:58.577Z",
+        "line": 19,
+        "name": "Verify if delete place api is working",
+        "description": "",
+        "id": "add/update/delete-place-modifications-in-map;verify-if-delete-place-api-is-working",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 23001000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Delete place paylod",
+            "match": {
+              "location": "stepDefinitions.DemoPlaceModificationsStepDefinitions.delete_place_paylod()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 297257700,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User calls \"DeletePlaceAPI\" using http \"Post\" request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DeletePlaceAPI\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"Post\"",
+                  "offset": 39
+                }
+              ],
+              "location": "stepDefinitions.DemoPlaceModificationsStepDefinitions.user_calls_using_http_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2995700,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "response should be http status \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"200\"",
+                  "offset": 31
+                }
+              ],
+              "location": "stepDefinitions.DemoPlaceModificationsStepDefinitions.response_should_be_http_status(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 19002500,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "\"status\" in response body is \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"status\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"OK\"",
+                  "offset": 29
+                }
+              ],
+              "location": "stepDefinitions.DemoPlaceModificationsStepDefinitions.in_response_body_is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@DeletePlace"
+          }
+        ]
+      }
+    ],
+    "name": "Add/Update/Delete place modifications in map",
+    "description": "",
+    "id": "add/update/delete-place-modifications-in-map",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/demoplacemodifications.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-07-12T13:25:58.928Z",
+        "line": 3,
+        "name": "Route embedded HL7 message to CIE for CDE via synchroneous flow",
+        "description": "",
+        "id": "synchroneous-message-routing;route-embedded-hl7-message-to-cie-for-cde-via-synchroneous-flow",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Organization \"Orlando\" end point has been configured",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Orlando\"",
+                  "offset": 13
+                }
+              ],
+              "location": "stepDefinitions.SyncFlowStpDefinition.organization_end_point_has_been_configured(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Event group type \"ADT\" message type \"A01\" embedded HL7 message with account \"1234\" and global message id \"aggf55y57\" has been sent to CDE via CIE",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ADT\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"A01\"",
+                  "offset": 36
+                },
+                {
+                  "val": "\"1234\"",
+                  "offset": 76
+                },
+                {
+                  "val": "\"aggf55y57\"",
+                  "offset": 105
+                }
+              ],
+              "location": "stepDefinitions.SyncFlowStpDefinition.event_group_type_message_type_embedded_hl7_message_with_account_and_global_message_id_has_been_sent_to_cde_via_cie(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Return \"200\" response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"200\"",
+                  "offset": 7
+                }
+              ],
+              "location": "stepDefinitions.SyncFlowStpDefinition.return_response(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Audit log should be created in Auditlog table with status as \"Success\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Success\"",
+                  "offset": 61
+                }
+              ],
+              "location": "stepDefinitions.SyncFlowStpDefinition.audit_log_should_be_created_in_auditlog_table_with_status_as(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Synchroneous Message Routing",
+    "description": "",
+    "id": "synchroneous-message-routing",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/syncmessagerouting.feature",
+    "tags": []
+  }
+]
